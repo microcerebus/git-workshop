@@ -1,0 +1,28 @@
+1. pwd: lists present working directory
+2. ls: directory listing
+3. cd <dir-name>: changes current active directory
+4. mkdir: makes new directory
+5. touch <filename.ext>: creates a new file with name <filename.ext>
+6. git init: intialises git repo inside a folder/ directory
+7. git status: tells you the status of our working directory
+8. git add <filename.ext>: adds a certain file to be tracked
+9. git commit -m 'MESSAGE': commits a change to the git repo
+10. git log: shows us all the commits that were made
+			(-- oneline: shows all commits previously made in oneline and their unique hash ids)
+
+11. git diff: shows us what has changed between out working directory and staging area
+12. git branch <branch-name>: displays which branch user is currently accessing (master by default)
+13. git checkout <branch-name>: changes active branch from the branch which the user is currently accessing to branch-name
+				 <commit-id>: switches to <commit-id>
+14. git merge <branch-name>: merges branch-name and current branch together (actually shifts pointer to current branch to branch-name (e.g. from master to featureA))
+
+15. git revert --no-edit <commit-id>: reverses <commit-id> commit in current file in current branch
+
+16. git reset --hard: rebuilds the file based on all previous commits.
+
+(add --> status --> commit 'message')
+[stages-------------repo]
+
+master --> points to the latest commit on the branch (e.g. 1st commit then 2nd, then 3rd, etc.)
+
+Branches --> parallel universes where we can work on differenct things in isolation
